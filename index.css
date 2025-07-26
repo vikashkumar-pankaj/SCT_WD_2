@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: hsl(210, 36%, 96%);
+    font-family: sans-serif;
+    background-image: url(vikash.jpg);
+    background-size: cover;
+}
+
+.calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #e0e0e0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn.operator {
+    background: #ffd54f;
+}
+
+.btn.equal {
+    grid-column: span 4;
+    background: #4caf50;
+    color: white;
+}
+
+.btn:hover {
+    background: #ccc;
+}
